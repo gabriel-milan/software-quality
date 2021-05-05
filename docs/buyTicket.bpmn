@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0qyfp8m" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.7.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.14.0">
+  <bpmn:collaboration id="planeTicket">
+    <bpmn:participant id="usuario" name="Usuário" processRef="buyPlaneTicket" />
+  </bpmn:collaboration>
+  <bpmn:process id="buyPlaneTicket" name="buyPlaneTicket" isExecutable="true">
+    <bpmn:intermediateThrowEvent id="end" name="Viaja">
+      <bpmn:incoming>Flow_1bnk4km</bpmn:incoming>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:startEvent id="start" name="Decide Viajar">
+      <bpmn:outgoing>Flow_0olv23v</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="escolherOrigemDestino" name="Escolher Origem e Destino">
+      <bpmn:incoming>Flow_0olv23v</bpmn:incoming>
+      <bpmn:outgoing>Flow_0tv6h0w</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="escolherDataIda" name="Escolhe Data Ida">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="idaVolta" />
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0tv6h0w</bpmn:incoming>
+      <bpmn:outgoing>Flow_1k57jo2</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="gateway">
+      <bpmn:incoming>Flow_1k57jo2</bpmn:incoming>
+      <bpmn:outgoing>gatewayIdaVolta</bpmn:outgoing>
+      <bpmn:outgoing>gatewayIda</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="realizaPagamento" name="Realiza Pagamento">
+      <bpmn:incoming>Flow_1sxtzlz</bpmn:incoming>
+      <bpmn:outgoing>Flow_1bnk4km</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="escolheCompanhia" name="Escolhe Companhia Aérea">
+      <bpmn:incoming>gatewayIda</bpmn:incoming>
+      <bpmn:incoming>Flow_0v5v01s</bpmn:incoming>
+      <bpmn:outgoing>Flow_1sxtzlz</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="escolherDataVolta" name="Escolhe Data Volta">
+      <bpmn:incoming>gatewayIdaVolta</bpmn:incoming>
+      <bpmn:outgoing>Flow_0v5v01s</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_0olv23v" sourceRef="start" targetRef="escolherOrigemDestino" />
+    <bpmn:sequenceFlow id="Flow_1sxtzlz" sourceRef="escolheCompanhia" targetRef="realizaPagamento" />
+    <bpmn:sequenceFlow id="Flow_0tv6h0w" sourceRef="escolherOrigemDestino" targetRef="escolherDataIda" />
+    <bpmn:sequenceFlow id="Flow_1k57jo2" sourceRef="escolherDataIda" targetRef="gateway" />
+    <bpmn:sequenceFlow id="gatewayIdaVolta" name="Ida e Volta" sourceRef="gateway" targetRef="escolherDataVolta" />
+    <bpmn:sequenceFlow id="gatewayIda" name="Só Ida" sourceRef="gateway" targetRef="escolheCompanhia" />
+    <bpmn:sequenceFlow id="Flow_0v5v01s" sourceRef="escolherDataVolta" targetRef="escolheCompanhia" />
+    <bpmn:sequenceFlow id="Flow_1bnk4km" sourceRef="realizaPagamento" targetRef="end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="planeTicket">
+      <bpmndi:BPMNShape id="Participant_1u2jv7z_di" bpmnElement="usuario" isHorizontal="true">
+        <dc:Bounds x="160" y="70" width="1140" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0olv23v_di" bpmnElement="Flow_0olv23v">
+        <di:waypoint x="248" y="180" />
+        <di:waypoint x="301" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1sxtzlz_di" bpmnElement="Flow_1sxtzlz">
+        <di:waypoint x="1030" y="180" />
+        <di:waypoint x="1090" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0tv6h0w_di" bpmnElement="Flow_0tv6h0w">
+        <di:waypoint x="401" y="180" />
+        <di:waypoint x="461" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1k57jo2_di" bpmnElement="Flow_1k57jo2">
+        <di:waypoint x="561" y="180" />
+        <di:waypoint x="606" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0y9mc10_di" bpmnElement="gatewayIdaVolta">
+        <di:waypoint x="656" y="180" />
+        <di:waypoint x="750" y="180" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="674" y="162" width="52" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jl5rd2_di" bpmnElement="gatewayIda">
+        <di:waypoint x="631" y="155" />
+        <di:waypoint x="631" y="108" />
+        <di:waypoint x="980" y="108" />
+        <di:waypoint x="980" y="140" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="784" y="90" width="32" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0v5v01s_di" bpmnElement="Flow_0v5v01s">
+        <di:waypoint x="850" y="180" />
+        <di:waypoint x="930" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1bnk4km_di" bpmnElement="Flow_1bnk4km">
+        <di:waypoint x="1190" y="180" />
+        <di:waypoint x="1242" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_0oc3r9u_di" bpmnElement="end">
+        <dc:Bounds x="1242" y="162" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1248" y="205" width="24" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="start">
+        <dc:Bounds x="212" y="162" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="197" y="205" width="67" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0c1k7qf_di" bpmnElement="escolherOrigemDestino">
+        <dc:Bounds x="301" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1h6fjhc_di" bpmnElement="escolherDataIda">
+        <dc:Bounds x="461" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1bbh9h4_di" bpmnElement="gateway" isMarkerVisible="true">
+        <dc:Bounds x="606" y="155" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1uvchx7_di" bpmnElement="realizaPagamento">
+        <dc:Bounds x="1090" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1yyvutl_di" bpmnElement="escolheCompanhia">
+        <dc:Bounds x="930" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0cufiz7_di" bpmnElement="escolherDataVolta">
+        <dc:Bounds x="750" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
