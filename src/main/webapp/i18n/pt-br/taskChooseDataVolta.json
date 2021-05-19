@@ -1,0 +1,25 @@
+{
+  "airFlyerApp": {
+    "taskChooseDataVolta": {
+      "home": {
+        "title": "Task Choose Data Voltas",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Task Choose Data Volta",
+        "createOrEditLabel": "Criar ou editar Task Choose Data Volta",
+        "notFound": "Nenhum Task Choose Data Volta encontrado"
+      },
+      "created": "Um novo Task Choose Data Volta foi criado com o identificador {{ param }}",
+      "updated": "Um Task Choose Data Volta foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Task Choose Data Volta foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Task Choose Data Volta {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Choose Data Volta"
+      },
+      "id": "ID",
+      "name": "Name",
+      "dataVolta": "Data Volta"
+    }
+  }
+}

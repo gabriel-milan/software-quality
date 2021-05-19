@@ -1,0 +1,12 @@
+{
+  "generator-jhipster-pais:0.0.0": {
+    "promptValues": {
+      "packageName": "org.airflyer.com"
+    }
+  },
+  "generator-jhipster:7.0.1": {
+    "promptValues": {
+      "nativeLanguage": "en"
+    }
+  }
+}

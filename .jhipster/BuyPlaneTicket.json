@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "origem",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "destino",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataIda",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dataVolta",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "companhiaAerea",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cartaoCredito",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "process-binding",
+  "processBpmnId": "BuyPlaneTicket",
+  "domainEntityName": "BuyTicket",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "BuyPlaneTicket",
+  "changelogDate": "20210401000002",
+  "skipFakeData": true
+}

@@ -1,0 +1,25 @@
+{
+  "airFlyerApp": {
+    "taskChooseDataIda": {
+      "home": {
+        "title": "Task Choose Data Idas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Choose Data Ida",
+        "createOrEditLabel": "Create or edit a Task Choose Data Ida",
+        "notFound": "No Task Choose Data Idas found"
+      },
+      "created": "A new Task Choose Data Ida is created with identifier {{ param }}",
+      "updated": "A Task Choose Data Ida is updated with identifier {{ param }}",
+      "deleted": "A Task Choose Data Ida is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Choose Data Ida {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Choose Data Ida"
+      },
+      "id": "ID",
+      "name": "Name",
+      "dataIda": "Data Ida"
+    }
+  }
+}

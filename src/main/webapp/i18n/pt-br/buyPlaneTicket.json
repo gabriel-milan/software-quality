@@ -1,0 +1,30 @@
+{
+  "airFlyerApp": {
+    "buyPlaneTicket": {
+      "home": {
+        "title": "Buy Plane Tickets",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Buy Plane Ticket",
+        "createOrEditLabel": "Criar ou editar Buy Plane Ticket",
+        "notFound": "Nenhum Buy Plane Ticket encontrado"
+      },
+      "created": "Um novo Buy Plane Ticket foi criado com o identificador {{ param }}",
+      "updated": "Um Buy Plane Ticket foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Buy Plane Ticket foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Buy Plane Ticket {{ id }}?"
+      },
+      "detail": {
+        "title": "Buy Plane Ticket"
+      },
+      "id": "ID",
+      "name": "Name",
+      "origem": "Origem",
+      "destino": "Destino",
+      "dataIda": "Data Ida",
+      "dataVolta": "Data Volta",
+      "companhiaAerea": "Companhia Aerea",
+      "cartaoCredito": "Cartao Credito"
+    }
+  }
+}

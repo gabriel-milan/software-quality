@@ -1,0 +1,58 @@
+{
+  "generator-jhipster": {
+    "skipJhipsterDependencies": true,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-pais",
+        "version": "0.0.0"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-pais",
+        "version": "0.0.0"
+      }
+    ],
+    "applicationType": "monolith",
+    "baseName": "air_flyer",
+    "jhipsterVersion": "7.0.1",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "testFrameworks": [],
+    "pages": [],
+    "creationTimestamp": 1621458239689,
+    "serviceDiscoveryType": false,
+    "reactive": false,
+    "authenticationType": "jwt",
+    "packageName": "org.airflyer.com",
+    "serverPort": "8080",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "buildTool": "maven",
+    "serverSideOptions": [],
+    "websocket": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "enableSwaggerCodegen": false,
+    "withAdminUi": true,
+    "clientTheme": "none",
+    "clientFramework": "vue",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "packageFolder": "org/airflyer/com",
+    "jwtSecretKey": "MmY3ZDQ2ZjcwMDVjYzkyMTBjYjkwZGUwODY0NjhkODY4YWY4YzMzNmZhOTkxMjlhZDNiNzgxZjY3MjI3MWM0OGU4Y2FkMGJiMTk1YzYwZWE0OWY4ZDIyMGJmZGM2YzFlZGQ0OWEwZjI0NTg5OTIyMTM2NzM2MWEzNThkNDI0MTc=",
+    "clientPackageManager": "npm",
+    "clientThemeVariant": "",
+    "languages": ["en", "pt-br"],
+    "entities": ["BuyTicket"]
+  }
+}

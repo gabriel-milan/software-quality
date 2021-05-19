@@ -1,0 +1,21 @@
+{
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "BuyPlaneTicket",
+  "processEntityName": "BuyPlaneTicket",
+  "domainEntityName": "BuyTicket",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "BuyTicketStartForm",
+  "changelogDate": "20210401000002",
+  "skipFakeData": true
+}

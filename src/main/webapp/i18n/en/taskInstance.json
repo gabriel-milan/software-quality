@@ -1,0 +1,35 @@
+{
+  "airFlyerApp": {
+    "taskInstance": {
+      "home": {
+        "title": "Tasks",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Tasks found"
+      },
+      "details": {
+        "title": "Task Details"
+      },
+      "execute": {
+        "title": "Task Execution"
+      },
+      "id": "ID",
+      "taskId": "Camunda Task Id",
+      "name": "Name",
+      "status": "Status",
+      "description": "Description",
+      "createDate": "Create Date",
+      "createTime": "Create Time",
+      "dueDate": "Due Date",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "owner": "Owner",
+      "assignee": "Assignee",
+      "executionId": "Camunda Execution Id",
+      "taskDefinitionKey": "Task Definition Key",
+      "suspended": "Suspended",
+      "priority": "Priority",
+      "processDefinition": "Process Definition",
+      "processInstance": "Process Instance"
+    }
+  }
+}

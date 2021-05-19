@@ -1,0 +1,24 @@
+{
+  "airFlyerApp": {
+    "buyTicketStartForm": {
+      "home": {
+        "title": "Buy Ticket Start Forms",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Buy Ticket Start Form",
+        "createOrEditLabel": "Criar ou editar Buy Ticket Start Form",
+        "notFound": "Nenhum Buy Ticket Start Form encontrado"
+      },
+      "created": "Um novo Buy Ticket Start Form foi criado com o identificador {{ param }}",
+      "updated": "Um Buy Ticket Start Form foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Buy Ticket Start Form foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Buy Ticket Start Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Buy Ticket Start Form"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

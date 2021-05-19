@@ -1,0 +1,26 @@
+{
+  "airFlyerApp": {
+    "taskChooseOriginDestination": {
+      "home": {
+        "title": "Task Choose Origin Destinations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Choose Origin Destination",
+        "createOrEditLabel": "Create or edit a Task Choose Origin Destination",
+        "notFound": "No Task Choose Origin Destinations found"
+      },
+      "created": "A new Task Choose Origin Destination is created with identifier {{ param }}",
+      "updated": "A Task Choose Origin Destination is updated with identifier {{ param }}",
+      "deleted": "A Task Choose Origin Destination is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Choose Origin Destination {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Choose Origin Destination"
+      },
+      "id": "ID",
+      "name": "Name",
+      "origem": "Origem",
+      "destino": "Destino"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "airFlyerApp": {
+    "taskMakePayment": {
+      "home": {
+        "title": "Task Make Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Make Payment",
+        "createOrEditLabel": "Create or edit a Task Make Payment",
+        "notFound": "No Task Make Payments found"
+      },
+      "created": "A new Task Make Payment is created with identifier {{ param }}",
+      "updated": "A Task Make Payment is updated with identifier {{ param }}",
+      "deleted": "A Task Make Payment is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Make Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Make Payment"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cartaoCredito": "Cartao Credito"
+    }
+  }
+}

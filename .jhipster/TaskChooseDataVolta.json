@@ -1,0 +1,27 @@
+{
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "dataVolta",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "BuyPlaneTicket",
+  "processEntityName": "BuyPlaneTicket",
+  "taskBpmnId": "escolherDataVolta",
+  "domainEntityName": "BuyTicket",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskChooseDataVolta",
+  "changelogDate": "20210401000003"
+}

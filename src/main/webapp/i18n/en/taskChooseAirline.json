@@ -1,0 +1,25 @@
+{
+  "airFlyerApp": {
+    "taskChooseAirline": {
+      "home": {
+        "title": "Task Choose Airlines",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Choose Airline",
+        "createOrEditLabel": "Create or edit a Task Choose Airline",
+        "notFound": "No Task Choose Airlines found"
+      },
+      "created": "A new Task Choose Airline is created with identifier {{ param }}",
+      "updated": "A Task Choose Airline is updated with identifier {{ param }}",
+      "deleted": "A Task Choose Airline is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Choose Airline {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Choose Airline"
+      },
+      "id": "ID",
+      "name": "Name",
+      "companhiaAerea": "Companhia Aerea"
+    }
+  }
+}

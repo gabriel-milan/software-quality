@@ -1,0 +1,22 @@
+{
+  "airFlyerApp": {
+    "buyTicket": {
+      "home": {
+        "title": "Buy Tickets",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Buy Tickets found"
+      },
+      "detail": {
+        "title": "Buy Ticket"
+      },
+      "id": "ID",
+      "name": "Name",
+      "origem": "Origem",
+      "destino": "Destino",
+      "dataIda": "Data Ida",
+      "dataVolta": "Data Volta",
+      "companhiaAerea": "Companhia Aerea",
+      "cartaoCredito": "Cartao Credito"
+    }
+  }
+}

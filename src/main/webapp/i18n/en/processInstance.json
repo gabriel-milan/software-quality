@@ -1,0 +1,24 @@
+{
+  "airFlyerApp": {
+    "processInstance": {
+      "home": {
+        "title": "Process Instances",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Process Instances found"
+      },
+      "detail": {
+        "title": "Process Instance Details"
+      },
+      "id": "ID",
+      "businessKey": "Business Key",
+      "camundaDeploymentId": "Camunda Deployment Id",
+      "camundaProcessDefinitionId": "Camunda Process Definition Id",
+      "camundaProcessInstanceId": "Camunda Process Instance Id",
+      "camundaProcessVariables": "Camunda Process Variables",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "status": "Status",
+      "processDefinition": "Process Definition"
+    }
+  }
+}

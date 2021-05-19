@@ -1,0 +1,33 @@
+{
+  "airFlyerApp": {
+    "processDefinition": {
+      "home": {
+        "title": "Process Definitions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Process Definition",
+        "initLabel": "Init the Process",
+        "createOrEditLabel": "Create or edit a Process Definition",
+        "notFound": "No Process Definitions found"
+      },
+      "created": "A new Process Definition is created with identifier {{ param }}",
+      "updated": "A Process Definition is updated with identifier {{ param }}",
+      "deleted": "A Process Definition is deleted with identifier {{ param }}",
+      "instantiated": "A new Process Instance was created successfully",
+      "delete": {
+        "question": "Are you sure you want to delete Process Definition <br/><strong>{{ id }}</strong>?"
+      },
+      "detail": {
+        "title": "Process Definition Details"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "status": "Status",
+      "specificationFile": "Specification File",
+      "camundaDeploymentMessage": "Camunda Deployment Message",
+      "camundaDeploymentId": "Camunda Deployment Id",
+      "camundaProcessDefinitionId": "Camunda Process Definition Id",
+      "bpmnProcessDefinitionId": "Bpmn Process Definition Id"
+    }
+  }
+}
